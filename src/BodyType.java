@@ -1,0 +1,4 @@
+public enum BodyType {
+
+    SEDAN, HATCHBACK, COUPE, STATION_WAGON, CABRIOLET, SUV
+}
