@@ -16,7 +16,8 @@ public class Car {
     public Car() {
     }
 
-    public Car(int id, String model, String modelYear, BodyType bodyType, Transmission transmission, FuelType fuelType, int horsePower, int price) {
+    public Car(int id, String model, String modelYear, BodyType bodyType, Transmission transmission,
+               FuelType fuelType, int horsePower, int price) {
         this.id = id;
         this.model = model;
         this.modelYear = modelYear;
@@ -27,7 +28,8 @@ public class Car {
         this.price = price;
     }
 
-    public void addCar(int id, String model, String modelYear, BodyType bodyType, Transmission transmission, FuelType fuelType, int horsePower, int price) {
+    public void addCar(int id, String model, String modelYear, BodyType bodyType, Transmission transmission,
+                       FuelType fuelType, int horsePower, int price) {
         Car car = new Car(id, model, modelYear, bodyType, transmission, fuelType, horsePower, price);
         cars.add(car);
     }
@@ -36,7 +38,7 @@ public class Car {
         System.out.println("<< Available rental vehicles >>");
         System.out.println("-------------------------------");
 
-        for(Car car : this.cars) {
+        for (Car car : this.cars) {
             System.out.println("- Id: " + car.getId());
             System.out.println("- Model: " + car.getModel());
             System.out.println("- Model Year: " + car.getModelYear());
